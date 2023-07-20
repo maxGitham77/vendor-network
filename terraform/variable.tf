@@ -2,7 +2,7 @@ variable "aws_region" {}
 
 variable "app_name" {
   description = "Vendor Network configuration"
-  default = "vendor-network"
+  default     = "vendor-network"
 }
 
 variable "public_subnets" {
