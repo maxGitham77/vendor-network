@@ -6,9 +6,6 @@ terraform {
       }
     }
     backend "s3" {
-      bucket = "githubmax-oidc-terraformstate"
-      key = "terraform.tfstate"
-      region = "eu-central-1"
     }
 }
 

@@ -42,7 +42,7 @@ jobs:
         id: init
         working-directory: ./terraform
         env:
-          AWS_BUCKET_NAME: ${{ secrets.AWS_TFSTATE_BUCKET_NAME }}
+          AWS_BUCKET_NAME: ${{ secrets.AWS_TFSTATE_BUCKET_STATE }}
           AWS_BUCKET_KEY_NAME: ${{ secrets.AWS_TFSTATE_KEY_NAME }}
           AWS_REGION: ${{ secrets.AWS_REGION }}
         run: >
