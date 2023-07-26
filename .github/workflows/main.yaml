@@ -70,9 +70,9 @@ jobs:
           working-directory: ./terraform
           github-token: ${{ secrets.GITHUB_TOKEN }}
           script: |
-            const output = `#### Terraform Format and Style 🖌\`${{ steps.fmt.outcome }}\`
-            #### Terraform Initialization ⚙️\`${{ steps.init.outcome }}\`
-            #### Terraform Validation 🤖\`${{ steps.validate.outcome }}\`
+            const output = `Terraform Format and Style 🖌\`${{ steps.fmt.outcome }}\`
+            Terraform Initialization ⚙️\`${{ steps.init.outcome }}\`
+            Terraform Validation 🤖\`${{ steps.validate.outcome }}\`
             <details><summary>Validation Output</summary>
             \`\`\`\n
             ${{ steps.validate.outputs.stdout }}
@@ -80,7 +80,7 @@ jobs:
 
             </details>
 
-            #### Terraform Plan 📖\`${{ steps.plan.outcome }}\`
+            Terraform Plan 📖\`${{ steps.plan.outcome }}\`
 
             <details><summary>Show Plan</summary>
 
